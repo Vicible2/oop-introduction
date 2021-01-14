@@ -3,13 +3,13 @@
 declare(strict_types=1);
 
 /* EXERCISE 6
-Copy the classes of exercise 2.
-change the properties to private.
-Make a const barname with the value 'Het Vervolg'.
-print the constant on the screen
-create a function in beverage and use the constant.
-Do the same in the beer class
-print the output of these functions on the screen.
-Make sure that every print is on a new line.
+TODO:Copy the classes of exercise 2.
+TODO:change the properties to private.
+TODO:Make a const barname with the value 'Het Vervolg'.
+TODO:print the constant on the screen
+TODO:create a function in beverage and use the constant.
+TODO:Do the same in the beer class
+TODO:print the output of these functions on the screen.
+TODO:Make sure that every print is on a new line.
 Use typehinting everywhere!
 */
