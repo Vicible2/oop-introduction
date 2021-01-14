@@ -23,18 +23,20 @@ class Beverage {
 
     //Construct
     //constructs create intial property values that are assigned when creating a new class instance
-    function __construct($color, $price) // arguments $color & $price make it possible to use them as arguments when creating new instance (see line 37)
+    function __construct(string $color, float $price) // arguments $color & $price make it possible to use them as arguments when creating new instance (see line 37)
         {
+            $this->color = $color;
+            $this->price = $price;
             $this->temperature = 'cold';
         }
     //Return function on temperature and color
     function getInfo()
         {
-            return "This beverage is " . $this->temperature ." and " . $this->color . ". <br>";
+            return "This beverage is $this->temperature  and $this->color .<br>";
         }   
 }
 
-$cola = new Beverage('black', '€2');
+$cola = new Beverage('black', 2);
 
 //Default property setting, easier is using parameters see line 26 & 37
 // $cola->color = 'black';
