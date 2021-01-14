@@ -9,7 +9,7 @@ TODO: Have a default value "cold" in the construct for temperature.
 TODO: Remember for now we will use properties and methods that can be accessed from everywhere.
 TODO: Make a getInfo function which returns "This beverage is <temperature> and <color>."
 TODO: Instantiate an object which represents cola. Make sure that the color is set to black, the price equals 2 euro and the temperature to cold automatically
- print the getInfo on the screen.
+TODO: print the getInfo on the screen.
 TODO: print the temperature on the screen.
 TODO: USE TYPEHINTING EVERYWHERE!
 */
@@ -27,5 +27,18 @@ class Beverage {
         {
             $this->temperature = 'cold';
         }
-
+    //Return function on temperature and color
+    function getInfo()
+        {
+            return "This beverage is " . $this->temperature ." and " . $this->color . ". <br>";
+        }   
 }
+
+$cola = new Beverage;
+
+$cola->color = 'black';
+$cola->price = '€2';
+$cola->temperature = 'cold';
+
+echo $cola->getInfo();
+echo $cola->temperature;
