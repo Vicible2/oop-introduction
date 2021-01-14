@@ -24,8 +24,8 @@ class Beverage {
     //Construct
     //constructs create intial property values that are assigned when creating a new class instance
     function __construct()
-    {
-        $this->temperature = 'cold';
-    }
+        {
+            $this->temperature = 'cold';
+        }
 
 }
