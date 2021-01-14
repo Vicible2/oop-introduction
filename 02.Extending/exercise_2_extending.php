@@ -32,7 +32,7 @@ class Beer extends Beverage {
         $this->alcoholPercentage = $alcoholPercentage;
     }
     function getAlcoholPercentage(){
-        return "<br>The alcoholpercentage of Duvel averages around {$this->alcoholPercentage} %.<br>";
+        return "<br> The alcoholpercentage of Duvel averages around {$this->alcoholPercentage} %.<br>";
     }
 }
 
