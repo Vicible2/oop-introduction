@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
+require "../01.Classes/exercise_1_classes.php";
+
 /* EXERCISE 2
 TODO: Make class beer that extends from Beverage.
 TODO:Create the properties name (string) and alcoholpercentage (float).
@@ -15,3 +22,25 @@ TODO:Make sure that each print is on a different line.
 TODO:Try to get this error on the screen= Fatal error: Uncaught Error: Call to undefined method Beverage::getAlcoholpercentage() in /var/www/becode/workshop/exercise2.php on line 64
 !! USE TYPEHINTING EVERYWHERE!
 */
+
+
+class Beer extends Beverage {
+
+    function __construct(string $color, float $price, string $name, float $alcoholPercentage, string $temperature = "cold") {
+        parent::__construct($color, $price, $name, $alcoholPercentage, $temperature);
+        $this->name = $name;
+        $this->alcoholPercentage = $alcoholPercentage;
+    }
+    function getAlcoholPercentage(){
+        return "<br>The alcoholpercentage of Duvel averages around {$this->alcoholPercentage} %.<br>";
+    }
+}
+
+$duvel = new Beer('blond', 3.5, 'Duvel', 8.5);
+
+
+echo $duvel->getAlcoholPercentage();
+echo "{$duvel->alcoholPercentage} <br>" ;
+
+echo " {$duvel->color} <br>";
+echo $duvel->getInfo();

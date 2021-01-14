@@ -17,9 +17,11 @@ TODO: USE TYPEHINTING EVERYWHERE!
 class Beverage {
 
     //properties
-    var $color;
-    var $price;
-    var $temperature;
+    public $color;
+    public $price;
+    public $temperature;
+    public $name;
+    public $alcoholPercentage;
 
     //Construct
     //constructs create intial property values that are assigned when creating a new class instance
