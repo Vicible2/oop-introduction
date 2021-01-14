@@ -38,11 +38,3 @@ class Beverage {
         }
 }
 
-$cola = new Beverage('black', 2);
-
-//Default property setting, easier is using parameters see line 26 & 37
-// $cola->color = 'black';
-// $cola->price = '€2';
-
-echo $cola->getInfo();
-echo $cola->temperature;

@@ -3,11 +3,6 @@
 declare(strict_types=1);
 
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
-require "../01.Classes/exercise_1_classes.php";
 
 /* EXERCISE 2
 TODO: Make class beer that extends from Beverage.
@@ -36,11 +31,3 @@ class Beer extends Beverage {
     }
 }
 
-$duvel = new Beer('blond', 3.5, 'Duvel', 8.5);
-
-
-echo $duvel->getAlcoholPercentage();
-echo "{$duvel->alcoholPercentage} <br>" ;
-
-echo " {$duvel->color} <br>";
-echo $duvel->getInfo();
