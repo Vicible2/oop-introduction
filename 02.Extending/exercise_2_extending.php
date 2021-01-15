@@ -19,15 +19,15 @@ TODO:Try to get this error on the screen= Fatal error: Uncaught Error: Call to u
 */
 
 
-class Beer extends Beverage {
+// class Beer extends Beverage {
 
-    function __construct(string $color, float $price, string $name, float $alcoholPercentage, string $temperature = "cold") {
-        parent::__construct($color, $price, $name, $alcoholPercentage, $temperature);
-        $this->name = $name;
-        $this->alcoholPercentage = $alcoholPercentage;
-    }
-    function getAlcoholPercentage(){
-        return "<br> The alcoholpercentage of Duvel averages around {$this->alcoholPercentage} %.<br>";
-    }
-}
+//     function __construct(string $color, float $price, string $name, float $alcoholPercentage, string $temperature = "cold") {
+//         parent::__construct($color, $price, $name, $alcoholPercentage, $temperature);
+//         $this->name = $name;
+//         $this->alcoholPercentage = $alcoholPercentage;
+//     }
+//     function getAlcoholPercentage(){
+//         return "<br> The alcoholpercentage of Duvel averages around {$this->alcoholPercentage} %.<br>";
+//     }
+// }
 
